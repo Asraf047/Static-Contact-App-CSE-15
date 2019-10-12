@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b77d2</color>
+    <color name="colorPrimaryDark">#1a71c7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="dark">#FF222222</color>
+    <color name="white">#EEEEEE</color>
+    <color name="id">#ffffff</color>
+    <color name="des">#fffafa</color>
+</resources>

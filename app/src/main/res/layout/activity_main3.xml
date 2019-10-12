@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/id"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark"
+        android:text="Amanullah Asraf" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:text="TextView" />
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_padding"
+        android:background="@color/id">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/i1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/dark" />
+
+        <ImageButton
+            android:id="@+id/navButton1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="15dp"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_phone_black_24dp"/>
+
+        <ImageButton
+            android:onClick="msg"
+            android:id="@+id/navButton2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="15dp"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_message_black_24dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+    <include layout="@layout/content_scrolling" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/base_padding"
+        android:background="@color/light">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/i1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/dark" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/base_padding"
+        android:background="@color/dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/i1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/light" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+<!--
+
+<FrameLayout
+android:id="@+id/Linear3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear2"
+android:layout_margin="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear4"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear3"
+android:layout_marginRight="@dimen/layout_margin"
+android:layout_marginLeft="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Discription:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_discription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear5"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear4"
+android:layout_margin="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Status:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear6"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear5"
+android:layout_marginRight="@dimen/layout_margin"
+android:layout_marginLeft="@dimen/layout_margin"
+android:layout_marginTop="0dp"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Id:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_id2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="daaadaad"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear7"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear6"
+android:layout_margin="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_name2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear8"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear7"
+android:layout_marginRight="@dimen/layout_margin"
+android:layout_marginLeft="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Discription:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_discription2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/Linear9"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Linear8"
+android:layout_margin="@dimen/layout_margin"
+android:background="@drawable/sign_in_btn"
+android:clickable="true"
+android:elevation="4dp"
+android:foreground="?selectableItemBackground"
+android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Status:"
+        android:textColor="@color/id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_status2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="text_status"
+        android:textColor="@color/des" />
+
+</LinearLayout>
+
+</FrameLayout>
+
+-->
